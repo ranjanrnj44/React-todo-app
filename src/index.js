@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+ let dataList = [
+      { name: "Eat", id: "todo-0", completed: true },
+      { name: "Sleep", id: "todo-1", completed: false },
+      { name: "Code", id: "todo-2", completed: true }
+ ];
+    
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App tasks={dataList} />
   </React.StrictMode>,
   document.getElementById('root')
 );
